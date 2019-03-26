@@ -9,9 +9,6 @@ spec:
       revisionTemplate:
         spec:
           container:
-            image: docker.io/prbobba/gocounter:bora
+            image: docker.io/{dockerhub-username}/gocounter:bora
             ports:
               - "8080:8080"
-            env:
-              - name: TARGET
-                value: "Go Sample v1"
